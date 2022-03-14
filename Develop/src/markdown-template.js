@@ -2,7 +2,7 @@
 const generateProject = questions => {
   return `
 # Title: ${questions.title}
-## Table OF Contents
+## Table of Contents
 [Description](#description)
 [Installation](#installation)
 [Usage](#usage)
