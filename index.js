@@ -136,7 +136,7 @@ function init() {
   })
   .then(content => {
     console.log(content);
-    writeToFile("README.md", content)
+    writeToFile("./generatedFiles/README.md", content)
   })
 }
 
