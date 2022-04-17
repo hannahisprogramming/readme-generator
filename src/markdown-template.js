@@ -3,11 +3,17 @@ const generateProject = questions => {
   return `
 # Title: ${questions.title}
 ## Table of Contents
+
 [Description](#description)
+
 [Installation](#installation)
+
 [Usage](#usage)
+
 [Licenses](#licenses)
+
 [Contribution](#contribution)
+
 [Contact](#contact)
 
 ### Description
