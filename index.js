@@ -34,6 +34,24 @@ const questions = () => {
     },
     {
       type: 'input',
+      name: 'githubLink',
+      message: 'What is the github link of your project? (Required)',
+      validate: githubInput => {
+        if (githubInput) {
+          return true;
+        } else {
+          console.log('Please enter a github link!');
+          return false;
+        }
+      }
+    },
+    {
+      type: 'input',
+      name: 'deployedLink',
+      message: 'What is the link to the deployed version of your project? (If Available)'
+    },
+    {
+      type: 'input',
       name: 'installation',
       message: 'What installation is required for your project?',
       validate: installationInput => {
@@ -62,7 +80,7 @@ const questions = () => {
       type: 'list',
       name: 'license',
       message: 'What license did you build this project with? (Choose one)',
-      choices: ["MIT","ISC","APACHE2.0","GPL"]
+      choices: ["MIT","ISC","APACHE2.0","GPL", "None"]
     },
     {
       type: 'input',

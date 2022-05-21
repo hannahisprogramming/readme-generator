@@ -6,6 +6,8 @@ const generateProject = questions => {
 
 [Description](#description)
 
+[Links](#links)
+
 [Installation](#installation)
 
 [Usage](#usage)
@@ -18,6 +20,11 @@ const generateProject = questions => {
 
 ### Description
 ${questions.description}
+Picture of the application:
+
+### Links
+Github Link: ${questions.githubLink}
+Deployed Application: ${questions.deployedLink}
 
 ### Installation
 ${questions.installation}
